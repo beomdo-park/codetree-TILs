@@ -1,0 +1,1 @@
+print(*['*' for i in range(int(input()))],sep="\n")
