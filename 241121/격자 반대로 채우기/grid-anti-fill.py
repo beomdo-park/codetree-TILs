@@ -4,8 +4,9 @@ n = int(sys.stdin.readline())
 matrix = [[n * i + j + 1 for j in range(n)] for i in range(n)]
 
 #짝수 줄 역순만들기
-for i in range(1, n+1,2):
-    matrix[i]=matrix[i][::-1]
+for i in range(1, n):
+    if i%2==1:
+        matrix[i]=matrix[i][::-1]
 
 result_matrix = [[0 for i in range(n)] for j in range(n)]
 #행 열 바꿔주기
