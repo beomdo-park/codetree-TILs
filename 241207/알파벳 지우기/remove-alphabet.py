@@ -1,0 +1,5 @@
+text1 = input()
+text2 = input()
+result1 = ''.join(char for char in text1 if char.isnumeric())
+result2 = ''.join(char for char in text2 if char.isnumeric())
+print(int(result1)+int(result2)) 
